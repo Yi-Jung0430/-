@@ -1,0 +1,12 @@
+.header {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg);
+    background-color: $primary;
+    background-size: cover;
+    background-position: center;
+    height: 870px;
+    width: 100%;
+
+    &__text {
+        width: 445px;
+    }
+}
