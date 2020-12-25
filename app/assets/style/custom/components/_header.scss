@@ -6,7 +6,19 @@
     height: 870px;
     width: 100%;
 
-    &__text {
-        width: 445px;
+    &__title {
+      @include mobile {
+        font-size: 32px;
+      }
+    }
+    &__txt {
+			line-height: 36px;
+			
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    .custom-btn {
+      font-size: 28px;
     }
 }

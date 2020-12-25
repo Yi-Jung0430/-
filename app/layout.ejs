@@ -20,48 +20,56 @@
   <!-- nav -->
   <div class="container">
     <div class="row">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <h1>
-          <a class="navbar-brand" href="#">
-            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d’Perfume.png" alt="">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <h1 class="logo">
+          <a class="navbar-brand mr-auto" href="index.html">
+            d’Perfume
           </a>
         </h1>
+        <div class="d-lg-none ml-auto">
+          <a class="nav-link text-secondary position-relative" href="#">
+            <span class="material-icons">shopping_cart</span>
+            <span class="navbar__cart__icon badge badge-pill badge-primary font-weight-light">3</span>
+          </a>
+        </div>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link text-info" href="#">
-                <span class="material-icons">
+                <span class="material-icons align-middle">
                   store
                 </span>
-                Product <span class="sr-only">(current)</span>
+                <span class="align-middle">Product</span>
+                <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span class="material-icons">
+                <span class="material-icons align-middle">
                   person
                 </span>
-                log in
+                <span class="align-middle">log in</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span class="material-icons">
+                <span class="material-icons align-middle">
                   favorite
                 </span>
-                Wishlist
+                <span class="align-middle">Wishlist</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <span class="material-icons">
+                <span class="material-icons align-middle">
                   shopping_cart
                 </span>
-                Cart(3)
+                <span class="align-middle">Cart(3)</span>
               </a>
             </li>
           </ul>
@@ -72,9 +80,25 @@
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
-  </footer>
+    <footer class="footer">
+      <nav class="bg-primary py-4">
+        <div class="container d-flex align-items-center">
+          <a href="./index.html" class="footer__logo mr-5">d’Perfume</a>
+          <p class="font-size-sm text-white mb-0">© 2020. All Rights Reserved.</p>
+          <ul class="nav d-none d-md-flex ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white h5 font-weight-normal mb-0 pr-0 pl-9" href="./products.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white h5 font-weight-normal mb-0 pr-0 pl-9" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white h5 font-weight-normal mb-0 pr-0 pl-9" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
