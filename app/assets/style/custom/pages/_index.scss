@@ -46,3 +46,23 @@
     border: 2px solid $info;
   }
 }
+
+@include mobile {
+  .img-gingembre {
+    background-position: center;
+  }
+  .img-n5 {
+    background-position: 15% center;
+  }
+  .img-detail {
+    height: 680px;
+    background-position: center 0;
+  }
+  .card-deck {
+    padding-left: 0;
+  }
+  .subscribe-img {
+    height: 220px;
+    background-position: 0 0;
+  }
+}

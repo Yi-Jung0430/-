@@ -2,23 +2,24 @@
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg);
     background-color: $primary;
     background-size: cover;
-    background-position: center;
+    background-position: center 0;
     height: 870px;
     width: 100%;
 
-    &__title {
-      @include mobile {
-        font-size: 32px;
-      }
-    }
     &__txt {
 			line-height: 36px;
-			
-      @include mobile {
-        font-size: 20px;
-      }
     }
     .custom-btn {
       font-size: 28px;
+    }
+
+    @media mobile {
+      height: 480px;
+      &__title {
+        font-size: 32px;
+      }
+      &__txt {
+        font-size: 20px;
+      }
     }
 }
